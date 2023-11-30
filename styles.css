@@ -43,6 +43,7 @@ body {
 .title {
     display: flex;
     justify-content: center;
+    padding: 50px 0 0;
 }
 
 .subtext  {
@@ -53,12 +54,15 @@ body {
     color: var(--text-white-sec);
 }
 
-.top-button {
+button {
     background-color: #3882f6;
+    color: var(--text-white);
     padding: 6px 18px;
     border-radius: 5px;
+}
+
+.top-button {  
     border: none;
-    color: var(--text-white-sec);
 }
 
 .placeholder {
@@ -124,9 +128,10 @@ blockquote {
     width: 500px;
     font-size: 20px;
     font-style: italic;
-    font-weight: 100;
+    font-weight: lighter;
     color: var(--background-blue);
     margin-bottom: -10px;
+    letter-spacing: .2px
 }
 
 .attr {
@@ -147,11 +152,36 @@ blockquote {
     border-radius: 8px;
     display: flex;
     padding: 20px 50px;
-    margin: 50px
+    margin: 50px;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.call {
+    color: var(--text-white);
+    font-weight: bold;
+    margin-bottom: -8px;
+}
+
+.sign {
+    color: var(--text-white-sec);
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.bottom-button {
+    border: 2px solid var(--text-white);
+    align-self: center;
 }
 
 .footer {
     background-color: #1f2937;
     color: #f9faf8;
     text-align: center;
+}
+
+.copyright {
+    font-weight: 100;
+    font-size: 15px;
+    padding: 10px;
 }
